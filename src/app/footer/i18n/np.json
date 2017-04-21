@@ -1,0 +1,14 @@
+{
+    "TOOLBAR": {
+        "TOGGLE_NAVIGATION": "नेभिगेसन टगल गर्नुहोस्",
+        "TOGGLE_NAVIGATION_FOLD": "टगल गर्नुहोस् नेभिगेसन गुना",
+        "TOGGLE_NAVIGATION_MODE": "नेभिगेसन मोड टगल गर्नुहोस्",
+        "SEARCH": "खोज",
+        "USER_SETTINGS": "User settings",
+        "TOGGLE_QUICK_PANEL": "प्रयोगकर्ता सेटिङहरू",
+        "ENGLISH": "अंग्रेजी",
+        "SPANISH": "स्पेनी",
+        "TURKISH": "टर्की",
+        "NEPALESE": "नेपाली"
+    }
+}
