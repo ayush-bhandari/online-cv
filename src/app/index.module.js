@@ -23,6 +23,7 @@ import IndexRoute from './index.route';
 import IndexRun from './index.run';
 
 import AppToolbar from './toolbar/toolbar.module';
+import AppFooter from './footer/footer.module';
 
 angular
 	.module('app',[
@@ -33,7 +34,8 @@ angular
 		'pascalprecht.translate',
 		
 		// app modules
-		AppToolbar
+		AppToolbar,
+		AppFooter
 	])
 	.controller('IndexController',IndexController)
 	.factory('api', IndexApi)

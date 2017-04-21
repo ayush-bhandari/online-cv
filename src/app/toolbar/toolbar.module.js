@@ -1,5 +1,5 @@
 import ToolbarController from './toolbar.controller';
-import toolBar from './toolbar.directive.js';
+import toolBar from './toolbar.directive';
 
 const MODULE_NAME = 'toolbar';
 
