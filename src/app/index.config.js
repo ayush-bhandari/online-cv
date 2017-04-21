@@ -1,8 +1,8 @@
 export default function config($translateProvider,$mdThemingProvider)
 {
     $mdThemingProvider.theme('default')
-        .primaryPalette('blue')
-        .accentPalette('pink');
+        .primaryPalette('brown')
+        .accentPalette('green');
 
     $translateProvider.useLoader('$translatePartialLoader', {
         urlTemplate: '{part}/i18n/{lang}.json'
