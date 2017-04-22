@@ -25,6 +25,9 @@ import IndexRun from './index.run';
 import AppToolbar from './toolbar/toolbar.module';
 import AppFooter from './footer/footer.module';
 
+import home from './main/home/home.module';
+import skills from './main/skills/skills.module';
+
 angular
 	.module('app',[
 		// third party modules
@@ -35,7 +38,10 @@ angular
 		
 		// app modules
 		AppToolbar,
-		AppFooter
+		AppFooter,
+
+		home,
+		skills
 	])
 	.controller('IndexController',IndexController)
 	.factory('api', IndexApi)
