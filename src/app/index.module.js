@@ -28,6 +28,7 @@ import AppFooter from './footer/footer.module';
 import home from './main/home/home.module';
 import skills from './main/skills/skills.module';
 import tools from './main/tools/tools.module';
+import works from './main/works/works.module';
 
 angular
 	.module('app',[
@@ -43,7 +44,8 @@ angular
 
 		home,
 		skills,
-		tools
+		tools,
+		works
 	])
 	.controller('IndexController',IndexController)
 	.factory('api', IndexApi)
