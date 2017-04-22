@@ -12,7 +12,7 @@ export default function config($translateProvider,$mdThemingProvider,$httpProgre
     });
 
     $translateProvider.useLoader('$translatePartialLoader', {
-        urlTemplate: '{part}/i18n/{lang}.json'
+        urlTemplate: '/{part}/i18n/{lang}.json'
     });
     $translateProvider.preferredLanguage('en');
     $translateProvider.useSanitizeValueStrategy('sanitize');

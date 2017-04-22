@@ -29,6 +29,7 @@ import home from './main/home/home.module';
 import skills from './main/skills/skills.module';
 import tools from './main/tools/tools.module';
 import works from './main/works/works.module';
+import contact from './main/contact/contact.module';
 
 angular
 	.module('app',[
@@ -45,7 +46,8 @@ angular
 		home,
 		skills,
 		tools,
-		works
+		works,
+		contact
 	])
 	.controller('IndexController',IndexController)
 	.factory('api', IndexApi)
