@@ -18,7 +18,7 @@ angular
 
         $stateProvider.state(homeState);
 
-        $translatePartialLoaderProvider.addPart('app/main/home');
+        $translatePartialLoaderProvider.addPart('home');
 
     }
 export default MODULE_NAME;

@@ -1,8 +1,8 @@
 export default function config($translateProvider,$mdThemingProvider,$httpProgressOpsProvider)
 {
     $mdThemingProvider.theme('default')
-        .primaryPalette('brown')
-        .accentPalette('green');
+        .primaryPalette('blue')
+        .accentPalette('pink');
 
     $httpProgressOpsProvider.setOps({
         background: 'yellow',
@@ -12,7 +12,7 @@ export default function config($translateProvider,$mdThemingProvider,$httpProgre
     });
 
     $translateProvider.useLoader('$translatePartialLoader', {
-        urlTemplate: '/{part}/i18n/{lang}.json'
+        urlTemplate: 'app/i18n/{part}/{lang}.json'
     });
     $translateProvider.preferredLanguage('en');
     $translateProvider.useSanitizeValueStrategy('sanitize');

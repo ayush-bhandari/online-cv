@@ -18,7 +18,7 @@ angular
 
         $stateProvider.state(skillsState);
 
-        $translatePartialLoaderProvider.addPart('app/main/skills');
+        $translatePartialLoaderProvider.addPart('skills');
 
     }
 export default MODULE_NAME;

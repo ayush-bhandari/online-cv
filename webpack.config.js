@@ -43,13 +43,13 @@ module.exports = function makeWebpackConfig() {
       loader: 'html-minify-loader'
     },{
       test: /\.scss$/,
-      // use: [{
-      //     loader: "style-loader" // creates style nodes from JS strings
-      // }, {
-      //     loader: "css-loader" // translates CSS into CommonJS
-      // }, {
+      use: [{
+          loader: "style-loader" // creates style nodes from JS strings
+      }, {
+          loader: "css-loader" // translates CSS into CommonJS
+      }, {
           loader: 'sass-loader' // compiles Sass to CSS
-      // }]
+      }]
     }]
   };
   config.plugins = [
@@ -66,6 +66,10 @@ module.exports = function makeWebpackConfig() {
       from: __dirname + '/src/assets/img',
       to: __dirname + '/dist/img'
     }]),
+    new CopyWebpackPlugin([{
+      from: __dirname + '/src/app/i18n',
+      to: __dirname + '/dist/app/i18n'
+    }]),
     new HtmlWebpackPlugin({
         template: './src/index.html',
         inject: 'body'
@@ -73,7 +77,7 @@ module.exports = function makeWebpackConfig() {
     new ExtractTextPlugin({filename: 'css/[name].css', allChunks: false})
   ];
   config.devServer = {
-    contentBase: './src/public',
+    contentBase: './src',
     stats: 'minimal',
     historyApiFallback: true
   };

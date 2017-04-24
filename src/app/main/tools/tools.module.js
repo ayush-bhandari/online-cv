@@ -18,7 +18,7 @@ angular
 
         $stateProvider.state(toolsState);
 
-        $translatePartialLoaderProvider.addPart('app/main/tools');
+        $translatePartialLoaderProvider.addPart('tools');
 
     }
 export default MODULE_NAME;

@@ -18,7 +18,7 @@ angular
 
         $stateProvider.state(contactState);
 
-        $translatePartialLoaderProvider.addPart('app/main/contact');
+        $translatePartialLoaderProvider.addPart('contact');
 
     }
 export default MODULE_NAME;

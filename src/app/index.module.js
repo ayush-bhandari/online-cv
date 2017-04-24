@@ -13,7 +13,7 @@ import 'ng-http-progress';
 
 import '../../node_modules/material-design-iconic-font/dist/css/material-design-iconic-font.min.css';
 import '../../node_modules/angular-material/angular-material.min.css';
-import '../../node_modules/material-design-lite/dist/material.brown-green.min.css';
+import '../../node_modules/material-design-lite/dist/material.blue-pink.min.css';
 import '../../node_modules/ng-http-progress/dist/ng-http-progress.min.css';
 
 import IndexApi from './index.api';

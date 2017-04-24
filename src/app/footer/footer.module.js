@@ -1,5 +1,6 @@
 import FooterController from './footer.controller';
 import fooTer from './footer.directive';
+import './footer.scss';
 
 const MODULE_NAME = 'footer';
 
@@ -12,6 +13,6 @@ const MODULE_NAME = 'footer';
     /** @ngInject */
     function config($translatePartialLoaderProvider)
     {
-        $translatePartialLoaderProvider.addPart('app/footer');
+        $translatePartialLoaderProvider.addPart('footer');
     }
 export default MODULE_NAME;

@@ -12,6 +12,6 @@ const MODULE_NAME = 'toolbar';
     /** @ngInject */
     function config($translatePartialLoaderProvider)
     {
-        $translatePartialLoaderProvider.addPart('app/toolbar');
+        $translatePartialLoaderProvider.addPart('toolbar');
     }
 export default MODULE_NAME;
