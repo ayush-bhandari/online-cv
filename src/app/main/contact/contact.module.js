@@ -1,5 +1,5 @@
 import ContactController from './contact.controller';
-
+import './contact.scss';
 const MODULE_NAME = 'contact';
 
 angular

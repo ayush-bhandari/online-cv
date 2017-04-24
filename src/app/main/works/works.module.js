@@ -1,5 +1,5 @@
 import WorksController from './works.controller';
-
+import './works.scss';
 const MODULE_NAME = 'works';
 
 angular

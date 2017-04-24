@@ -1,11 +1,11 @@
 
-export default function ToolbarController($location,$rootScope, $q, $state, $timeout, $mdSidenav, $translate, $mdToast)
+export default function ToolbarController($scope,$translate)
     {
         var vm = this;
 
         // Data
         
-        vm.languages = {
+        $scope.languages = {
             en: {
                 'title'      : 'English',
                 'translation': 'TOOLBAR.ENGLISH',
@@ -22,20 +22,20 @@ export default function ToolbarController($location,$rootScope, $q, $state, $tim
 
         // Methods
         
-        vm.changeLanguage = changeLanguage;
+        $scope.changeLanguage = changeLanguage;
         
         // Functions
         init();
 
         function init()
         {
-            vm.selectedLanguage = vm.languages[$translate.preferredLanguage()];
-            $translate.use(vm.selectedLanguage.code);
+            $scope.selectedLanguage = $scope.languages[$translate.preferredLanguage()];
+            $translate.use($scope.selectedLanguage.code);
         }
 
         function changeLanguage(lang)
         {
-            vm.selectedLanguage = lang;
+            $scope.selectedLanguage = lang;
             $translate.use(lang.code);
         }
     }

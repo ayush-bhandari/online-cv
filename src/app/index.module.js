@@ -22,6 +22,8 @@ import IndexController from './index.controller';
 import IndexRoute from './index.route';
 import IndexRun from './index.run';
 
+import './index.scss';
+
 import AppToolbar from './toolbar/toolbar.module';
 import AppFooter from './footer/footer.module';
 

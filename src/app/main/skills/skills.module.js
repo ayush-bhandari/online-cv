@@ -1,5 +1,5 @@
 import SkillsController from './skills.controller';
-
+import './skills.scss';
 const MODULE_NAME = 'skills';
 
 angular

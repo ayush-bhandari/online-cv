@@ -1,19 +1,21 @@
 import HomeController from './home.controller';
-
+import './home.scss';
 const MODULE_NAME = 'home';
 
 angular
         .module(MODULE_NAME,[])
-        .controller('HomeController',HomeController)
-        .config(config);
-
+        .config(config)
+        .controller('HomeController',HomeController);
+    
     /** @ngInject */
     function config($stateProvider, $translatePartialLoaderProvider)
     {
         var homeState = {
             name: 'home',
             url: '/home',
-            template: require('./home.html')
+            template: require('./home.html'),
+            controller: HomeController,
+            controllerAs: 'vm'
         }
 
         $stateProvider.state(homeState);

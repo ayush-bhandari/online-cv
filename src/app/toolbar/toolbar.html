@@ -3,7 +3,12 @@
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title"><md-button ui-sref="home"><b>Ayush Bhandari</b></md-button></span>
+      <span class="mdl-layout-title" layout="row" layout-align="space-around center">
+
+        <img class="toolbar_image" ng-src="../../assets/img/user/user.png">
+        <md-button ui-sref="home"><b>Ayush Bhandari</b></md-button>
+      
+      </span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
@@ -12,6 +17,55 @@
         <md-button class="md-raised md-accent" ui-sref="tools">Tools</md-button>
         <md-button class="md-raised md-accent" ui-sref="works">Works</md-button>
         <md-button class="md-raised md-accent" ui-sref="contact">Contact</md-button>
+      </nav>
+      <nav class="mdl-navigation">
+        <!-- Right aligned menu below button -->
+            <!-- <button id="demo-menu-lower-right"
+                    class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
+              <div layout="row" layout-align="center center">
+                <img class="flag" src="../assets/img/flags/{{vm.selectedLanguage.flag}}.png">
+                <span class="iso">{{vm.selectedLanguage.code}}</span>
+              </div>
+              {{vm.selectedLanguage.code}}
+            </button> -->
+          <md-button id="demo-menu-lower-right" class="md-raised md-accent">
+              <div layout="row" layout-align="center center">
+                <img class="flag" ng-src="../../assets/img/flags/{{selectedLanguage.flag}}.png">
+                <span class="iso">{{selectedLanguage.code}}</span>
+              </div>
+              </md-button>
+
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                for="demo-menu-lower-right">
+              <li class="mdl-menu__item" ng-repeat="(iso, lang) in languages" ng-click="changeLanguage(lang)" translate-attr-aria-label="{{lang.title}}">
+                        <span layout="row" layout-align="start center">
+                            <img class="flag" ng-src="../../assets/img/flags/{{lang.flag}}.png">
+                            <span translate="{{lang.translation}}">{{lang.title}}</span>
+                        </span>
+              </li>
+            </ul>
+        <!-- <md-menu id="language-menu" md-offset="0 72" md-position-mode="target-right target">
+            <md-button class="language-button" ng-click="$mdMenu.open()"
+                       aria-label="Language" md-menu-origin md-menu-align-target>
+                <div layout="row" layout-align="center center">
+                    <img class="flag" ng-src="../assets/img/flags/{{vm.selectedLanguage.flag}}.png">
+                    <span class="iso">{{vm.selectedLanguage.code}}</span>
+                </div>
+            </md-button>
+
+            <md-menu-content width="3" id="language-menu-content">
+                <md-menu-item ng-repeat="(iso, lang) in vm.languages">
+                    <md-button ng-click="vm.changeLanguage(lang)" aria-label="{{lang.title}}" translate
+                               translate-attr-aria-label="{{lang.title}}">
+                        <span layout="row" layout-align="start center">
+                            <img class="flag" ng-src="../assets/img/flags/{{lang.flag}}.png">
+                            <span translate="{{lang.translation}}">{{lang.title}}</span>
+                        </span>
+                    </md-button>
+                </md-menu-item>
+            </md-menu-content>
+        </md-menu> -->
+
       </nav>
     </div>
   </header>
@@ -24,10 +78,10 @@
         <md-button class="md-raised md-accent" ui-sref="contact">Contact</md-button>
     </nav>
   </div>
-  <main class="mdl-layout__content">
-    <div class="page-content">
-      <div ui-view></div>
-        <foo-ter></foo-ter>
+  <main class="mdl-layout__content" flex>
+    <div ui-view class="page-content">
+      <!-- <div ></div> -->
+       
 
     </div>
   </main>

@@ -1,5 +1,5 @@
 import ToolsController from './tools.controller';
-
+import './tools.scss';
 const MODULE_NAME = 'tools';
 
 angular
