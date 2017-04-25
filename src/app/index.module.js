@@ -10,6 +10,7 @@ import 'angular-translate-loader-partial';
 import 'angular-ui-router';
 import 'material-design-lite';
 import 'ng-http-progress';
+import 'angular1-star-rating';
 
 import '../../node_modules/material-design-iconic-font/dist/css/material-design-iconic-font.min.css';
 import '../../node_modules/angular-material/angular-material.min.css';
@@ -40,6 +41,7 @@ angular
 		'ui.router',
 		'thatisuday.ng-http-progress',
 		'pascalprecht.translate',
+		'star-rating',
 		
 		// app modules
 		AppToolbar,

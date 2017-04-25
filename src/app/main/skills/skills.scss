@@ -2,3 +2,5 @@
 	overflow-y: scroll;
 	padding: 50px 50px 50px 50px;
 }
+.rating { transition: all .2s ease-in-out; }
+.rating:hover { transform: scale(1.1); }
