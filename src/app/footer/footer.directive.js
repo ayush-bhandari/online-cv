@@ -1,7 +1,7 @@
 export default function fooTer() {
     var directive = {
-        template: require('./footer.html'),
         restrict: 'EA',
+        template: require('./footer.html'),
         controller: 'FooterController',
         controllerAs: 'vm',
         bindToController: true
