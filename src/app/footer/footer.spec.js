@@ -1,4 +1,8 @@
+// import footer from './footer/footer.module';
+// import FooterController from './footer.controller';
+
 describe('FooterController', function() {
+  // require('./footer.module.js');
   beforeEach(module('footer'));
 
   var $controller;

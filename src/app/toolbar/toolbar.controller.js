@@ -1,10 +1,8 @@
-
 export default function ToolbarController($scope,$translate)
     {
         var vm = this;
 
         // Data
-        
         $scope.languages = {
             en: {
                 'title'      : 'English',
@@ -21,9 +19,9 @@ export default function ToolbarController($scope,$translate)
         };
 
         // Methods
-        
         $scope.changeLanguage = changeLanguage;
-        
+        vm.init = init;
+                
         // Functions
         init();
 

@@ -1,5 +1,7 @@
 // Karma configuration
 // Generated on Fri Apr 21 2017 11:21:46 GMT+0545 (NPT)
+var webpackConfig = require('./webpack.config.js');
+webpackConfig.entry = {};
 
 module.exports = function(config) {
   config.set({
@@ -15,7 +17,10 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'src/app/**/*.spec.js'
+        './node_modules/angular/angular.min.js',
+        './node_modules/angular-mocks/angular-mocks.js',
+        './src/app/footer/footer.module.js',
+        './src/app/**/*.spec.js'
     ],
 
 
@@ -27,6 +32,10 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+        // './app/bundle.js': ['webpack'],      
+        // './tests/**/*.spec.js': ['babel']
+        './src/app/footer/footer.module.js': ['babel'],
+        './src/app/**/*.spec.js': ['babel']
     },
 
 
@@ -64,6 +73,12 @@ module.exports = function(config) {
 
     // Concurrency level
     // how many browser should be started simultaneous
-    concurrency: Infinity
+    concurrency: Infinity,
+
+    webpack: webpackConfig,
+
+    webpackMiddleware: {
+      noInfo: true
+    }
   })
 }

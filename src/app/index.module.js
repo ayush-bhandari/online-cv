@@ -11,11 +11,13 @@ import 'angular-ui-router';
 import 'material-design-lite';
 import 'ng-http-progress';
 import 'angular1-star-rating';
+import 'ng-emoticons';
 
 import '../../node_modules/material-design-iconic-font/dist/css/material-design-iconic-font.min.css';
 import '../../node_modules/angular-material/angular-material.min.css';
 import '../../node_modules/material-design-lite/dist/material.blue-pink.min.css';
 import '../../node_modules/ng-http-progress/dist/ng-http-progress.min.css';
+import '../../node_modules/ng-emoticons/dist/ng-emoticons.min.css';
 
 import IndexApi from './index.api';
 import IndexConfig from './index.config';
@@ -38,10 +40,13 @@ angular
 	.module('app',[
 		// third party modules
 		'ngMaterial',
+		'ngSanitize',
+		'ngResource',
 		'ui.router',
 		'thatisuday.ng-http-progress',
 		'pascalprecht.translate',
 		'star-rating',
+		'ngEmoticons',
 		
 		// app modules
 		AppToolbar,

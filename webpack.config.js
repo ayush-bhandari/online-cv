@@ -22,7 +22,9 @@ module.exports = function makeWebpackConfig() {
     rules: [{
       test: /\.js$/,
       loader: 'babel-loader',
+      // include: 'app',
       exclude: /node_modules/
+      // exclude: 'node_modules'
     }, {
       test: /\.css$/,
       loader: ExtractTextPlugin.extract({
