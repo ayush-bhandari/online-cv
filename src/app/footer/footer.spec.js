@@ -1,24 +1,14 @@
-// import footer from './footer/footer.module';
-// import FooterController from './footer.controller';
-
-describe('FooterController', function() {
-  // require('./footer.module.js');
+describe('FooterController', function(){
   beforeEach(module('footer'));
 
-  var $controller;
-  var controller;
-  var $httpBackend;
+  describe('getFullName()', function(){
+    it('should handle names correctly', inject(function($controller){
+      var myController = $controller('FooterController');
 
-  beforeEach(inject(function(_$controller_,_$httpBackend_){
-    $controller = _$controller_; 
-    $httpBackend = _$httpBackend_;
-    controller = $controller('FooterController',{});
-  }));
+      myController.firstName = 'George';
+      myController.lastName = 'Harrison';
 
-  it('should check if controller is defined',function(){
-    expect(controller).toBeDefined();
-  }); 
-  it('should check if init function is defined',function(){
-    expect(controller.init).toBeDefined();
+      myController.getFullName().should.equal('George Harrison');
+    }));
   });
 });

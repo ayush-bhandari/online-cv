@@ -22,8 +22,11 @@ module.exports = function makeWebpackConfig() {
     rules: [{
       test: /\.js$/,
       loader: 'babel-loader',
+      query: {
+        presets: ['es2015']
+      }
       // include: 'app',
-      exclude: /node_modules/
+      // exclude: /node_modules/
       // exclude: 'node_modules'
     }, {
       test: /\.css$/,
@@ -43,7 +46,12 @@ module.exports = function makeWebpackConfig() {
     },{
       test: /\.html$/,
       loader: 'html-minify-loader'
-    },{
+    },
+    // {
+    //   test: /\.scss$/, 
+    //   loader: ExtractTextPlugin.extract("style-loader", "css!sass")
+    // }
+    {
       test: /\.scss$/,
       use: [{
           loader: "style-loader" // creates style nodes from JS strings
@@ -52,7 +60,8 @@ module.exports = function makeWebpackConfig() {
       }, {
           loader: 'sass-loader' // compiles Sass to CSS
       }]
-    }]
+    }
+    ]
   };
   config.plugins = [
     new webpack.LoaderOptionsPlugin({

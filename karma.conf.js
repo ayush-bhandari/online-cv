@@ -1,7 +1,5 @@
 // Karma configuration
-// Generated on Fri Apr 21 2017 11:21:46 GMT+0545 (NPT)
-var webpackConfig = require('./webpack.config.js');
-webpackConfig.entry = {};
+// Generated on Tue Jun 06 2017 23:10:19 GMT+0545 (+0545)
 
 module.exports = function(config) {
   config.set({
@@ -12,15 +10,21 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jasmine'],
+    frameworks: ['mocha', 'chai'],
 
 
     // list of files / patterns to load in the browser
     files: [
-        './node_modules/angular/angular.min.js',
-        './node_modules/angular-mocks/angular-mocks.js',
-        './src/app/footer/footer.module.js',
-        './src/app/**/*.spec.js'
+    'node_modules/angular/angular.js',
+    'node_modules/angular-mocks/angular-mocks.js',
+    'node_modules/angular-translate/dist/angular-translate.min.js',
+    'node_modules/angular-translate-loader-partial/angular-translate-loader-partial.min.js',
+    './src/app/*.module.js',
+    './src/app/*.spec.js',
+    './src/app/**/*.module.js',
+    './src/app/**/*.spec.js'
+    // './src/app/footer/footer.module.js',
+    // './src/app/footer/footer.spec.js'
     ],
 
 
@@ -31,13 +35,19 @@ module.exports = function(config) {
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-    preprocessors: {
-        // './app/bundle.js': ['webpack'],      
-        // './tests/**/*.spec.js': ['babel']
-        './src/app/footer/footer.module.js': ['babel'],
-        './src/app/**/*.spec.js': ['babel']
-    },
+    // preprocessors: {
+    // },
 
+preprocessors: {
+            // "./src/app/footer/footer.module.js": ["webpack"]
+            "./src/app/**/*.module.js": ["webpack"],
+            "./src/app/*.module.js": ["webpack"]
+        },
+        // webpack configuration
+        webpack: require("./webpack.config.js"),
+        webpackMiddleware: {
+            stats: "errors-only"
+        },
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
@@ -64,7 +74,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
 
 
     // Continuous Integration mode
@@ -73,12 +83,6 @@ module.exports = function(config) {
 
     // Concurrency level
     // how many browser should be started simultaneous
-    concurrency: Infinity,
-
-    webpack: webpackConfig,
-
-    webpackMiddleware: {
-      noInfo: true
-    }
+    concurrency: Infinity
   })
 }
