@@ -1,9 +1,10 @@
-export default function FooterController()
+export default function FooterController(api)
     {
         var vm = this;
 
         // Data
-        
+        vm.social = null;
+
         // Methods
         vm.init = init;
 
@@ -12,7 +13,16 @@ export default function FooterController()
 
         function init()
         {
-            
+            api.footer.query({},
+                function (response)
+                {
+                    vm.social = response.data;
+                },
+                function (error)
+                {
+
+                }
+            );
         }
 
     }

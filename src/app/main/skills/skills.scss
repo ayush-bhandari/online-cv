@@ -1,17 +1,22 @@
 .skills_content{
 	overflow-y: scroll;
-	padding: 50px 50px 50px 50px;
+	/*padding: 50px 50px 50px 50px;*/
+	/*padding: 5px 5px 5px 5px;*/
+	
 }
-.rating { transition: all .2s ease-in-out; }
+/*.rating { transition: all .2s ease-in-out; }
 .rating:hover { transform: scale(1.1); }
-
+*/
 .mdl-card__title{
 	color: #fff;
 	background-color: #2196F3;	
 }
 
-.mdl-card{
+.skills_card{
 
-margin: 10px;
+/*margin: 10px;*/
 	display: inline-block;
 }
+
+.skills_card { transition: all .2s ease-in-out; }
+.skills_card:hover { transform: scale(1.04); }

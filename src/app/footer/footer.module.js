@@ -5,7 +5,7 @@ import './footer.scss';
 const MODULE_NAME = 'footer';
 
     angular
-        .module(MODULE_NAME, ['pascalprecht.translate'])
+        .module(MODULE_NAME, [])
         .controller('FooterController',FooterController)
         .directive('fooTer',fooTer)
         .config(config);
