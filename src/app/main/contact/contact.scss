@@ -4,7 +4,28 @@
 	height: 100%;
 	width: 20%;
 }
-.contact_grid{
+.contact_content{
 	display: inline-block;
-    width: 405px;
+}
+.contact_card.mdl-card {
+  /*min-width: 100%;*/
+  display: inline-block;
+}
+.contact_card > .mdl-card__title {
+  color: #fff;
+  height: 100px;
+  background-color: #2196F3;
+}
+.contact_card > .mdl-card__menu {
+  color: #fff;
+}
+
+.contact_icons{
+	color: #2196F3;
+}
+
+@media screen and (min-width: 480px) {
+    .contact_card.mdl-card {
+        width: 47%;
+    }
 }

@@ -15,16 +15,14 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-    'node_modules/angular/angular.js',
-    'node_modules/angular-mocks/angular-mocks.js',
-    'node_modules/angular-translate/dist/angular-translate.min.js',
-    'node_modules/angular-translate-loader-partial/angular-translate-loader-partial.min.js',
-    './src/app/*.module.js',
-    './src/app/*.spec.js',
-    './src/app/**/*.module.js',
-    './src/app/**/*.spec.js'
-    // './src/app/footer/footer.module.js',
-    // './src/app/footer/footer.spec.js'
+        'node_modules/angular/angular.js',
+        'node_modules/angular-mocks/angular-mocks.js',
+        'node_modules/angular-translate/dist/angular-translate.min.js',
+        'node_modules/angular-translate-loader-partial/angular-translate-loader-partial.min.js',
+        './src/app/*.module.js',
+        './src/app/*.spec.js',
+        './src/app/**/*.module.js',
+        './src/app/**/*.spec.js'
     ],
 
 
@@ -35,19 +33,16 @@ module.exports = function(config) {
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-    // preprocessors: {
-    // },
-
-preprocessors: {
-            // "./src/app/footer/footer.module.js": ["webpack"]
-            "./src/app/**/*.module.js": ["webpack"],
-            "./src/app/*.module.js": ["webpack"]
-        },
-        // webpack configuration
-        webpack: require("./webpack.config.js"),
-        webpackMiddleware: {
-            stats: "errors-only"
-        },
+    preprocessors: {
+        "./src/app/**/*.module.js": ["webpack"],
+        "./src/app/*.module.js": ["webpack"]
+    },
+       
+    // webpack configuration
+    webpack: require("./webpack.config.js"),
+    webpackMiddleware: {
+        stats: "errors-only"
+    },
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
