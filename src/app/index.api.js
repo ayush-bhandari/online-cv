@@ -21,6 +21,14 @@ export default function apiService($resource,$rootScope)
                   }
             }
         });
+        api.ability = $resource(api.baseUrl+'ability/ability.json', {}, {
+               query: {
+                  method: 'GET', 
+                  headers: {
+                    
+                  }
+            }
+        });
 
         api.footer = $resource(api.baseUrl+'footer/footer.json', {}, {
             query: {

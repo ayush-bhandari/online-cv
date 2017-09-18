@@ -1,0 +1,331 @@
+{
+	"ability":[
+		{
+			"category_name":"Operating Systems",
+			"category_url":"/operating-systems",
+			"category_image":"",
+			"category_ability":[
+				{
+					"ability_name":"Windows",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4",
+					"ability_description":"95, XP, 7, 8, 8.1, 10"
+				},{
+					"ability_name":"Linux",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4.5",
+					"ability_description":"Kali, Ubuntu 14.04 LTS, Ubuntu 16.04 LTS, Raspbian"
+				},{
+					"ability_name":"MacOS",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4.5",
+					"ability_description":"Mountain Lion, El Capitan, Sierra, High Sierra"
+				},{
+					"ability_name":"iOS",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"3.5",
+					"ability_description":"8, 9, 10, 11"
+				},{
+					"ability_name":"Android",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4",
+					"ability_description":"Marshmallow, Nougat"
+				}
+			]
+		},{
+			"category_name":"Programming Languages",
+			"category_url":"/programming-languages",
+			"category_image":"",
+			"category_ability":[
+				{
+					"ability_name":"C",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4",
+					"ability_description":""
+				},{
+					"ability_name":"C++",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4.5",
+					"ability_description":""
+				},{
+					"ability_name":"HTML, HTML5",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4",
+					"ability_description":"Well actually a markup language and backbone of every web page in the internet."
+				},{
+					"ability_name":"CSS, CSS3",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4",
+					"ability_description":"The style sheet language to beautify web sites."
+				},{
+					"ability_name":"JavaScript",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4.5",
+					"ability_description":"The scripting language that runs through my blood."
+				},{
+					"ability_name":"PHP",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"3",
+					"ability_description":"The server side scripting language."
+				},{
+					"ability_name":"Python",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"2",
+					"ability_description":"Used in rapberry_pi I/O mode, to create bots and used for machine learning"
+				},{
+					"ability_name":"Java",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"2",
+					"ability_description":"Learned for some time to get hold of programming approach concepts"
+				},{
+					"ability_name":"Matlab",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"1",
+					"ability_description":"Created waves and learned to plot digital graphs based on real values for sensors."
+				}
+			]
+		},{
+			"category_name":"Programming Approach",
+			"category_url":"/programming-approach",
+			"category_image":"",
+			"category_ability":[
+				{
+					"ability_name":"Object Oriented Programming (OOP)",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4",
+					"ability_description":"A programming style"
+				},{
+					"ability_name":"Agile Software Development",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"3",
+					"ability_description":"Software development methodology using JIRA software"
+				},{
+					"ability_name":"MVC Architecture",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4.5",
+					"ability_description":"Model View Controller architecture on JavaScript and PHP based frameworks"
+				},{
+					"ability_name":"SOAP API",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"2.5",
+					"ability_description":"Simple Object Access Protocol based API standard"
+				},{
+					"ability_name":"REST API",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4.5",
+					"ability_description":"REpresentational State Transfer based API standard"
+				}
+			]
+		},{
+			"category_name":"Familiar Frameworks",
+			"category_url":"/familiar-frameworks",
+			"category_image":"",
+			"category_ability":[
+				{
+					"ability_name":"NodeJS",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4.5",
+					"ability_description":""
+				},{
+					"ability_name":"ExpressJS",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4.5",
+					"ability_description":""
+				},{
+					"ability_name":"AngularJS",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4.5",
+					"ability_description":""
+				},{
+					"ability_name":"MarionetteJS",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4",
+					"ability_description":""
+				},{
+					"ability_name":"RequireJS",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4",
+					"ability_description":""
+				},{
+					"ability_name":"Laravel",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"3.5",
+					"ability_description":""
+				},{
+					"ability_name":"Wordpress",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4.5",
+					"ability_description":""
+				},{
+					"ability_name":"Cocos2d-x",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"3",
+					"ability_description":""
+				},{
+					"ability_name":"ReactJS + Redux",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4",
+					"ability_description":""
+				},{
+					"ability_name":"React Native",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4",
+					"ability_description":""
+				},{
+					"ability_name":"Some Used Libraries",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4",
+					"ability_description":"jQuery, jQueryUI, BackboneJS, UnderscoreJS, PassportJS, jwt, etc."
+				},{
+					"ability_name":"Web Design",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4",
+					"ability_description":"Bootstrap, Foundation, Symantic, Material Design, Angular Material, Material Design Lite, Materialize, SASS, LESS, SVG & SVG Animation"
+				}
+			]
+		},{
+			"category_name":"Ecommerce Solutions",
+			"category_url":"/ecommerce-solutions",
+			"category_image":"",
+			"category_ability":[
+				{
+					"ability_name":"OpenCart",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4.5",
+					"ability_description":""
+				},{
+					"ability_name":"WooCommerce",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4",
+					"ability_description":""
+				},{
+					"ability_name":"Magento",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4",
+					"ability_description":""
+				}
+			]
+		},{
+			"category_name":"Database Solutions",
+			"category_url":"/database-solutions",
+			"category_image":"",
+			"category_ability":[
+				{
+					"ability_name":"MongoDB",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4.5",
+					"ability_description":""
+				},{
+					"ability_name":"MySQL",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4",
+					"ability_description":""
+				},{
+					"ability_name":"PostgreSQL",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4",
+					"ability_description":""
+				}
+			]
+		},{
+			"category_name":"Tools & Techs",
+			"category_url":"/tools-and-techs",
+			"category_image":"",
+			"category_ability":[
+				{
+					"ability_name":"Package Managers and CLIs",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4.5",
+					"ability_description":"npm, bower, composer, webpack, gulp, yarn, grunt, yeoman, babel, git, pm2, php artisan, docker-compose"
+				},{
+					"ability_name":"Testing Tools",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4.5",
+					"ability_description":"Karma, Protactor, Mocha, Chai, Jasmine"
+				},{
+					"ability_name":"DevOps",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4",
+					"ability_description":"Docker, AWS-S3-EC2-Lamda"
+				},{
+					"ability_name":"Design",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"3.5",
+					"ability_description":"Photoshop, Illustrator & Sketch"
+				},{
+					"ability_name":"Web Servers",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4.5",
+					"ability_description":"NginX, Apache & CentOS"
+				},{
+					"ability_name":"IDE & Text Editors",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"3.5",
+					"ability_description":"Sublime Text, Atom, Web Storm & Notepad"
+				}
+			]
+		},{
+			"category_name":"Embedded Systems",
+			"category_url":"/embedded-systems",
+			"category_image":"",
+			"category_ability":[
+				{
+					"ability_name":"Platforms",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4.5",
+					"ability_description":"AVR, Arduino & Raspberry Pi."
+				},{
+					"ability_name":"Microcontrollers",
+					"ability_image":"",
+					"ability_icon":"",
+					"ability_rating":"4",
+					"ability_description":"Atmega328, Atmega16, Atmega32, At89s51 & At89s52"
+				}
+			]
+		}
+	]
+}

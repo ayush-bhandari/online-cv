@@ -29,9 +29,9 @@ import AppToolbar from './toolbar/toolbar.module';
 import AppFooter from './footer/footer.module';
 
 import home from './main/home/home.module';
-import skills from './main/skills/skills.module';
-import tools from './main/tools/tools.module';
-import works from './main/works/works.module';
+import ability from './main/ability/ability.module';
+// import tools from './main/tools/tools.module';
+import works from './main/showcase/works.module';
 import contact from './main/contact/contact.module';
 
 angular
@@ -48,11 +48,10 @@ angular
 		
 		// app modules
 		AppToolbar,
-		AppFooter,
+		// AppFooter,
 
 		home,
-		skills,
-		tools,
+		ability,
 		works,
 		contact
 	])
