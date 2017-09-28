@@ -4,8 +4,8 @@ const MODULE_NAME = 'ability';
 
 angular
         .module(MODULE_NAME,[])
-        .controller('AbilityController',AbilityController)
-        .config(config);
+        .config(config)
+        .controller('AbilityController',AbilityController);
 
     /** @ngInject */
     function config($stateProvider, $translatePartialLoaderProvider)
@@ -13,7 +13,9 @@ angular
         var abilityState = {
             name: 'ability',
             url: '/ability',
-            template: require('./ability.html')
+            template: require('./ability.html'),
+            controller: AbilityController,
+            controllerAs: 'vm'
         }
 
         $stateProvider.state(abilityState);

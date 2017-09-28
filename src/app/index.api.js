@@ -29,6 +29,22 @@ export default function apiService($resource,$rootScope)
                   }
             }
         });
+        api.showcase = $resource(api.baseUrl+'showcase/showcase.json', {}, {
+               query: {
+                  method: 'GET', 
+                  headers: {
+                    
+                  }
+            }
+        });
+        // api.contact = $resource(api.baseUrl+'contact/contact.json', {}, {
+        //        query: {
+        //           method: 'GET', 
+        //           headers: {
+                    
+        //           }
+        //     }
+        // });
 
         api.footer = $resource(api.baseUrl+'footer/footer.json', {}, {
             query: {

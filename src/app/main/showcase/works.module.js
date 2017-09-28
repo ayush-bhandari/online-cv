@@ -18,7 +18,7 @@ angular
 
         $stateProvider.state(worksState);
 
-        $translatePartialLoaderProvider.addPart('works');
+        $translatePartialLoaderProvider.addPart('showcase');
 
     }
 export default MODULE_NAME;
