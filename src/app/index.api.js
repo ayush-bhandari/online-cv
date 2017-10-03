@@ -46,13 +46,14 @@ export default function apiService($resource,$rootScope)
         //     }
         // });
 
-        api.footer = $resource(api.baseUrl+'footer/footer.json', {}, {
-            query: {
-              method: 'GET', 
-              headers: {
-              }
-            }
-        });
+        // api.footer = $resource(api.baseUrl+'footer/footer.json', {}, {
+        //     query: {
+        //       method: 'GET', 
+        //       headers: {
+        //       }
+        //     }
+        // });
+        
       }
 
         return api;
