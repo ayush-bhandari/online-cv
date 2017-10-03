@@ -13,7 +13,9 @@ angular
         var contactState = {
             name: 'contact',
             url: '/contact',
-            template: require('./contact.html')
+            template: require('./contact.html'),
+            controller: ContactController,
+            controllerAs: 'vm'
         }
 
         $stateProvider.state(contactState);

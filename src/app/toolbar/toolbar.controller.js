@@ -1,7 +1,7 @@
 export default function ToolbarController($scope,$translate)
     {
         var vm = this;
-
+      
         // Data
         $scope.languages = {
             en: {

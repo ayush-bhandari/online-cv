@@ -11,11 +11,13 @@ import 'angular-ui-router';
 import 'material-design-lite';
 import 'ng-http-progress';
 import 'angular1-star-rating';
+import 'angular-emoji-filter-hd';
 
 import '../../node_modules/material-design-iconic-font/dist/css/material-design-iconic-font.min.css';
 import '../../node_modules/angular-material/angular-material.min.css';
 import '../../node_modules/material-design-lite/dist/material.blue-pink.min.css';
 import '../../node_modules/ng-http-progress/dist/ng-http-progress.min.css';
+import '../../node_modules/angular-emoji-filter-hd/dist/emoji.min.css';
 
 import IndexApi from './index.api';
 import IndexConfig from './index.config';
@@ -31,7 +33,7 @@ import AppFooter from './footer/footer.module';
 import home from './main/home/home.module';
 import ability from './main/ability/ability.module';
 // import tools from './main/tools/tools.module';
-import works from './main/showcase/works.module';
+import showcase from './main/showcase/showcase.module';
 import contact from './main/contact/contact.module';
 
 angular
@@ -45,14 +47,15 @@ angular
 		'thatisuday.ng-http-progress',
 		'pascalprecht.translate',
 		'star-rating',
-		
+		'dbaq.emoji',
+
 		// app modules
 		AppToolbar,
 		// AppFooter,
 
 		home,
 		ability,
-		works,
+		showcase,
 		contact
 	])
 	.controller('IndexController',IndexController)
