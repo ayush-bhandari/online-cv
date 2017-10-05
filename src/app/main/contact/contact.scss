@@ -1,19 +1,13 @@
-.contact_svg_icon{
-	position: fixed;
-	top: -50px;
-	height: 100%;
-	width: 20%;
-}
 .contact_content{
 	display: inline-block;
 }
 .contact_card.mdl-card {
-  /*min-width: 100%;*/
+  height: 100%;
   display: inline-block;
 }
 .contact_card > .mdl-card__title {
   color: #fff;
-  height: 100px;
+  height: 80px;
   background-color: #2196F3;
 }
 .contact_card > .mdl-card__menu {
@@ -29,3 +23,14 @@
         width: 47%;
     }
 }
+
+.web_link{
+        color: #2196F3;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 1.8;
+    }
+    i { transition: all .2s ease-in-out; }
+    i:hover {
+        transform: scale(1.3);  
+    }

@@ -1,0 +1,25 @@
+{
+	"social":[
+		{
+			"name":"Mail",
+			"icon_name":"email",
+			"url":"mailto:admin@ayushbhandari.com",
+			"target":"_self"
+		},{
+			"name":"Twitter",
+			"icon_name":"twitter",
+			"url":"https://twitter.com/ayush_da",
+			"target":"_blank"
+		},{
+			"name":"Linkedin",
+			"icon_name":"linkedin",
+			"url":"",
+			"target":"_blank"
+		},{
+			"name":"Github",
+			"icon_name":"github",
+			"url":"",
+			"target":"_blank"
+		}
+	]
+}

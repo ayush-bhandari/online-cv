@@ -1,8 +1,9 @@
 h2{
   text-align: center;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   text-rendering: optimizeLegibility;
   &.title_text {
+  	text-transform: uppercase;
     color: #2196F3;
     letter-spacing: .1em;
     text-shadow: -1px -1px 1px #000, 2px 2px 1px #000;
