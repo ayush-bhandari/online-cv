@@ -1,11 +1,13 @@
-.user_image{
-	height: 100%;
-    width:25%;
-    position: fixed;
-    top: 70px;
-    z-index: -1;
-}
 .intro_content{
-	overflow-y: scroll;
-	padding: 50px 50px 50px 50px;
+	padding: 10px 10px 10px 10px;
+}
+h4{
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  &.title_text {
+  	text-transform: uppercase;
+    color: #2196F3;
+    letter-spacing: .4em;
+    text-shadow: -1px -1px 1px #000, 2px 2px 1px #000;
+  }
 }

@@ -14,7 +14,6 @@ export default function ShowcaseController(api)
 
         	api.showcase.query({}, (response) => {
                     vm.data = response.showcase;
-                    console.log(vm.data);
                 },(err) => {   
 
                 }

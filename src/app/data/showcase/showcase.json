@@ -1,11 +1,37 @@
 {
 	"showcase":[
 		{
-			"title":"Seti Devi",
-			"web_url":"setidevi.com",
-			"image_url":"",
-			"sub_title":"",
-			"description":"This is a ecommerce solutions for a Nepalese garment shop expanding its business all over the globe."
+			"category_name":"Commercial Websites",
+			"category_showcase":[
+				{
+					"title":"Seti Devi",
+					"web_url":"http://setidevi.com/",
+					"image_url":"",
+					"description":"This is an ecommerce solutions for a Nepalese garment shop."
+				},{
+					"title":"Hash Make Solutions",
+					"web_url":"http://hashmake.com/home",
+					"image_url":"",
+					"description":"This website is company profile page of Hash Make Solutions."
+				}
+			]
+		},
+		{
+			"category_name":"OpenSource Projects",
+			"category_showcase":[
+				{
+					"title":"md-currency",
+					"web_url":"https://www.npmjs.com/package/md-currency",
+					"image_url":"",
+					"description":"This is an angular-material directive for AngularJS for basic currency selection and conversion from http request to Any Currency API."
+				},
+				{
+					"title":"md-country-select",
+					"web_url":"https://www.npmjs.com/package/md-country-select",
+					"image_url":"",
+					"description":"This is an Element or Attribute Directive for Country Selection based on md-select in Angular Material for AngularJS."
+				}
+			]
 		}
 	]
 }
