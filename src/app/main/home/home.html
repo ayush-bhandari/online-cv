@@ -1,15 +1,32 @@
 <div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--3-col mdl-layout--large-screen-only"></div>
-  <div class="mdl-cell mdl-cell--8-col intro_content" md-whiteframe="4">
+  <div class="mdl-cell mdl-cell--1-col mdl-layout--large-screen-only"></div>
+  <div class="mdl-cell mdl-cell--10-col intro_content">
 
   	<h4 class="title_text"><span class="scramble"></span><span ng-bind-html="vm.smiley | emoji"></span></h4>
-
-  	<div layout="row" layout-align="center center">
-  		<div><img ng-src="{{vm.image_url}}"></div>
+    
+<!-- <img class="user_image" ng-src="{{vm.image_url}}"> -->
+  	<!-- <div layout="row" layout-align="center center">
+  		<div><img class="user_image" ng-src="{{vm.image_url}}"></div>
   		<div>
   	<p>{{vm.details.para_one}}</p>
   	<p>{{vm.details.para_two}}</p></div>
-  	</div>
+  	</div> -->
+<div layout="row" layout-align="center center">
+  <div>
+
+  <h4 class="side_text" ng-repeat="left in vm.details.para_one">{{left.title}}</h4>
+  
+  </div>
+
+  <div><img class="user_image" ng-src="{{vm.image_url}}" /></div>
+  
+  <div>
+  
+  <h4 class="side_text" ng-repeat="right in vm.details.para_two">{{right.title}}</h4>
+  
+
+  </div>
+</div>
 
   </div>
   <div class="mdl-cell mdl-cell--1-col mdl-layout--large-screen-only"></div>

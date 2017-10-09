@@ -1,9 +1,9 @@
 {
 	"title":["awesome","amazing","faboulous","astonishing","remarkable","spectacular","marvelous","superb","terrific"],
-	"smiley":[":smile:"],
-	"image_url":"../../../assets/img/user/user.jpg",
+	"smiley":[":smile:",":smiley:",":blush:",":laughing:",":joy:"],
+	"image_url":"../../../assets/img/user/home.png",
 	"details":{
-		"para_one":"Hi, I'm Ayush and Welcome to my portfolio site.",
-		"para_two":""
+		"para_one":[{"title":"From Country Of Himalayas"},{"title":"Coder"}, {"title":"Designer"}],
+		"para_two":[{"title":"Kathmandu Based"}, {"title":"Developer"}, {"title":"Learner"}]
 	}
 }
