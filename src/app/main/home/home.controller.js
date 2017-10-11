@@ -7,6 +7,7 @@ export default function HomeController(api)
         vm.smiley;
         vm.image_url;
         vm.details;
+        vm.mixed;
 
         // Methods
         vm.init = init;
@@ -79,7 +80,7 @@ export default function HomeController(api)
                     vm.smiley = response.smiley[Math.floor(Math.random()*response.smiley.length)];
                     vm.image_url = response.image_url;
                     vm.details = response.details;
-					let full_title = "Did you know? you're " + vm.title;
+					let full_title = "Hey, you're " + vm.title;
 					fx.setText(full_title)
 
                 },(err) => {   

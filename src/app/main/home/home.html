@@ -4,21 +4,15 @@
 
   	<h4 class="title_text"><span class="scramble"></span><span ng-bind-html="vm.smiley | emoji"></span></h4>
     
-<!-- <img class="user_image" ng-src="{{vm.image_url}}"> -->
-  	<!-- <div layout="row" layout-align="center center">
-  		<div><img class="user_image" ng-src="{{vm.image_url}}"></div>
-  		<div>
-  	<p>{{vm.details.para_one}}</p>
-  	<p>{{vm.details.para_two}}</p></div>
-  	</div> -->
-<div layout="row" layout-align="center center">
+<div class="title_para">
+<div layout="row" layout-align="center center" class="mdl-layout--large-screen-only">
   <div>
 
   <h4 class="side_text" ng-repeat="left in vm.details.para_one">{{left.title}}</h4>
   
   </div>
 
-  <div><img class="user_image mdl-layout--large-screen-only" ng-src="{{vm.image_url}}" /></div>
+  <div><img class="user_image" ng-src="{{vm.image_url}}" /></div>
   
   <div>
   
@@ -26,6 +20,17 @@
   
 
   </div>
+</div>
+
+
+<div layout="column" layout-align="center center" class="mdl-layout--small-screen-only">
+  
+  <div><img class="user_image" ng-src="{{vm.image_url}}" /></div>
+
+  <div><h4 class="side_text" ng-repeat="para in vm.details.small_screen_para">{{para.title}}</h4></div>
+
+</div>
+
 </div>
 
   </div>

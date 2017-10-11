@@ -8,7 +8,7 @@ export default function ToolbarController($scope,$translate)
                 'title'      : 'English',
                 'translation': 'TOOLBAR.ENGLISH',
                 'code'       : 'en',
-                'flag'       : 'us'
+                'flag'       : 'en'
             },
             np: {
                 'title'      : 'Nepalese',

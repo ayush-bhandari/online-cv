@@ -1,4 +1,5 @@
 .contact_content{
+  font-family: 'Bree Serif', serif;
 	display: inline-block;
 }
 .contact_card.mdl-card {
@@ -6,6 +7,7 @@
   display: inline-block;
 }
 .contact_card > .mdl-card__title {
+  font-family: 'Bree Serif', serif;
   color: #fff;
   height: 80px;
   background-color: #2196F3;
@@ -17,7 +19,12 @@
 .contact_icons{
 	color: #2196F3;
 }
-
+.mdl-card__title-text{
+  font-family: 'Bree Serif', serif;
+}
+.mdl-button{
+  font-family: 'Bree Serif', serif;
+}
 @media screen and (min-width: 480px) {
     .contact_card.mdl-card {
         width: 47%;

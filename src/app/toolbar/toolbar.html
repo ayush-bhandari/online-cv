@@ -1,17 +1,21 @@
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title" layout="row" layout-align="space-around center">
-        <img class="toolbar_image mdl-layout--large-screen-only" ng-src="../../assets/img/user/user.jpg" ui-sref="home">
-        <span translate="TOOLBAR.TITLE"><b>Hi & Welcome</b></span>
-      </span>
+      <div class="mdl-layout-title toolbar_title" layout="row" layout-align="space-around center">
+        <img class="toolbar_image mdl-layout--large-screen-only" ng-src="../../assets/img/user/user.jpg" ui-sref="home"/>
+        <p class="marquee" translate="TOOLBAR.TITLE">Hi & Welcome</p>
+      </div>
       <div class="mdl-layout-spacer"></div>
       <nav class="mdl-navigation mdl-layout--large-screen-only">
         <md-button  ui-sref="ability" translate="TOOLBAR.ABILITY">ABILITY</md-button>
         <md-button  ui-sref="showcase" translate="TOOLBAR.SHOWCASE">SHOWCASE</md-button>
+        <md-button  ng-href="http://blog.ayushbhandari.com/" target="_blank" translate="TOOLBAR.BLOG">BLOG</md-button>
         <md-button  ui-sref="contact" translate="TOOLBAR.CONTACT">CONTACT</md-button>
       </nav>
       <nav class="mdl-navigation">
+
+        <md-button  ng-href="https://www.upwork.com/o/profiles/users/_~01b56d8ae4899e9964/" target="_blank" translate="TOOLBAR.HIRE">HIRE ME</md-button>
+
           <md-button id="demo-menu-lower-right" class="md-raised">
               <div layout="row" layout-align="center center">
                 <img class="flag" ng-src="../../assets/img/flags/{{selectedLanguage.flag}}.png">
@@ -37,7 +41,9 @@
     <nav class="mdl-navigation">
         <md-button class="md-raised md-primary" ui-sref="ability" translate="TOOLBAR.ABILITY">ABILITY</md-button>
         <md-button class="md-raised md-primary" ui-sref="showcase" translate="TOOLBAR.SHOWCASE">SHOWCASE</md-button>
+        <md-button class="md-raised md-primary" ng-href="http://blog.ayushbhandari.com/" target="_blank" translate="TOOLBAR.BLOG">BLOG</md-button>
         <md-button class="md-raised md-primary" ui-sref="contact" translate="TOOLBAR.CONTACT">CONTACT</md-button>
+        <md-button class="md-raised md-primary" ng-href="https://www.upwork.com/o/profiles/users/_~01b56d8ae4899e9964/" target="_blank" translate="TOOLBAR.HIRE">HIRE ME</md-button>
     </nav>
   </div>
   <main class="mdl-layout__content" flex>

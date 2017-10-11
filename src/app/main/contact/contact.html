@@ -1,56 +1,45 @@
-
 <div class="mdl-grid container">
   <div class="mdl-cell mdl-cell--3-col mdl-layout--large-screen-only"></div>
 
   <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-tablet mdl-cell--12-col-phone contact_content">
 
 
-
-
-
-
 <div class="mdl-cell contact_card mdl-card mdl-shadow--2dp">
   <div class="mdl-card__title">
-    <h3 class="mdl-card__title-text">Get In Touch ?</h3>
+    <h3 class="mdl-card__title-text" translate="CONTACT.FORM.TITLE">Stay In Touch?</h3>
   </div>
   <div class="mdl-card__supporting-text">
     <!-- Simple Textfield -->
-       <form name="getInTouchForm" ng-submit="" novalidate>
-
-       		<!-- <div ng-messages="" ng-show="getInTouchForm.$submitted" role="alert" multiple>
-                <div ng-message="unprocessable">
-                    <span translate=""></span>
-                </div>
-            </div> -->
+       <form name="getInTouchForm" novalidate>
 
        		<md-input-container class="md-block">
        		     
-               <md-icon class="contact_icons">face</md-icon>
-               <input type="text" name="name" ng-model="vm.name" placeholder="Name" required>
+          <md-icon class="contact_icons">face</md-icon>
+          <input type="text" name="name" ng-model="vm.form.name" placeholder="Name" required>
                 <div ng-messages="getInTouchForm.name.$error" role="alert" multiple>
-                    <div ng-message="required">Name is required</div>
+                    <div ng-message="required" translate="CONTACT.FORM.ERRORS.NAME_REQUIRED">Name is required</div>
                 </div>
           </md-input-container>
 
   			<md-input-container class="md-block">
   			<md-icon class="contact_icons">email</md-icon>
-                <input type="email" name="email" ng-model="vm.email" placeholder="Email" ng-pattern="/^.+@.+\..+$/" required>
+                <input type="email" name="email" ng-model="vm.form.email" placeholder="Email" ng-pattern="/^.+@.+\..+$/" required>
                 <div ng-messages="getInTouchForm.email.$error" role="alert" multiple>
                     <div ng-message="required">
-                        <span>Email is required</span>
+                        <span translate="CONTACT.FORM.ERRORS.EMAIL_REQUIRED">Email is required</span>
                     </div>
                     <div ng-message="pattern">
-                        <span >Email must be a valid e-mail address</span>
+                        <span translate="CONTACT.FORM.ERRORS.EMAIL_VALID">Email must be a valid e-mail address</span>
                     </div>
                 </div>
             </md-input-container>
 
             <md-input-container class="md-block">
             <md-icon class="contact_icons">message</md-icon>
-                <textarea name="message" ng-model="vm.message" rows="3" placeholder="Message" required></textarea>
+                <textarea name="message" ng-model="vm.form.message" rows="3" placeholder="Message" required></textarea>
                 <div ng-messages="getInTouchForm.message.$error" role="alert" multiple>
                     <div ng-message="required">
-                        <span>Message is required</span>
+                        <span translate="CONTACT.FORM.ERRORS.MESSAGE_REQUIRED">Message is required</span>
                     </div>
                 </div>
             </md-input-container>
@@ -58,7 +47,7 @@
 
   </div>
   <div class="mdl-card__actions mdl-card--border" layout="row" layout-align="end center">
-    <button type="submit" ng-disabled="getInTouchForm.$invalid || getInTouchForm.$pristine" class="mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+    <button ng-click="vm.sendForm()" ng-disabled="getInTouchForm.$invalid || getInTouchForm.$pristine" class="mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect" translate="CONTACT.FORM.SEND">
       Send 
     </button>
   </div>
@@ -69,7 +58,7 @@
 
 <div class="mdl-cell contact_card mdl-card mdl-shadow--2dp">
   <div class="mdl-card__title">
-    <h3 class="mdl-card__title-text">Get In Social ?</h3>
+    <h3 class="mdl-card__title-text" translate="CONTACT.SOCIAL.TITLE">Meet Through Social?</h3>
   </div>
   <div class="mdl-card__supporting-text">
 

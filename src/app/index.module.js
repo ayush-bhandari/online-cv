@@ -28,11 +28,9 @@ import IndexRun from './index.run';
 import './index.scss';
 
 import AppToolbar from './toolbar/toolbar.module';
-import AppFooter from './footer/footer.module';
 
 import home from './main/home/home.module';
 import ability from './main/ability/ability.module';
-// import tools from './main/tools/tools.module';
 import showcase from './main/showcase/showcase.module';
 import contact from './main/contact/contact.module';
 
@@ -51,7 +49,6 @@ angular
 
 		// app modules
 		AppToolbar,
-		// AppFooter,
 
 		home,
 		ability,

@@ -3,7 +3,8 @@
 	"smiley":[":smile:",":smiley:",":blush:",":laughing:",":joy:"],
 	"image_url":"../../../assets/img/user/home.png",
 	"details":{
-		"para_one":[{"title":"From Country Of Himalayas"},{"title":"Coder"}, {"title":"Designer"}],
-		"para_two":[{"title":"Kathmandu Based"}, {"title":"Developer"}, {"title":"Learner"}]
+		"para_one":[{"title":"From Himalayas"},{"title":"Web Developer"}, {"title":"Tech Enthusiast"}],
+		"para_two":[{"title":"Kathmandu Based"}, {"title":"Digital Designer"}, {"title":"Passionate Learner"}],
+		"small_screen_para":[{"title":"From Himalayas"},{"title":"Kathmandu Based"},{"title":"Web Developer"},{"title":"Digital Designer"}, {"title":"Tech Enthusiast"}, {"title":"Passionate Learner"}]
 	}
 }
