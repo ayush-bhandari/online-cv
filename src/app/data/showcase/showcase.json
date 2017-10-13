@@ -7,12 +7,17 @@
 					"title":"Seti Devi",
 					"web_url":"http://setidevi.com/",
 					"image_url":"",
-					"description":"This is an ecommerce solutions for a Nepalese garment shop."
+					"description":"An E-Commerce solution for a Nepalese Garment Factory."
 				},{
-					"title":"Hash Make Solutions",
+					"title":"Hash Make",
 					"web_url":"http://hashmake.com/",
 					"image_url":"",
-					"description":"This website is company profile page of Hash Make Solutions."
+					"description":"An application based company profile website for Hash Make Solutions."
+				},{
+					"title":"Rebecca",
+					"web_url":"http://rebecca.edu.np/",
+					"image_url":"",
+					"description":"WordPress based portfolio website of Rebecca Education Consultancy."
 				}
 			]
 		},
@@ -23,13 +28,13 @@
 					"title":"md-currency",
 					"web_url":"https://www.npmjs.com/package/md-currency",
 					"image_url":"",
-					"description":"This is an angular-material directive for AngularJS for basic currency selection and conversion from http request to Any Currency API."
+					"description":"An Angular-Material directive for currency conversion based on Material Design."
 				},
 				{
 					"title":"md-country-select",
 					"web_url":"https://www.npmjs.com/package/md-country-select",
 					"image_url":"",
-					"description":"This is an Element or Attribute Directive for Country Selection based on md-select in Angular Material for AngularJS."
+					"description":"An Angular-Material directive for country selection based on Material Design."
 				}
 			]
 		}

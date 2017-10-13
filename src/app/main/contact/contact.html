@@ -36,7 +36,7 @@
 
             <md-input-container class="md-block">
             <md-icon class="contact_icons">message</md-icon>
-                <textarea name="message" ng-model="vm.form.message" rows="3" placeholder="Message" required></textarea>
+                <textarea name="message" ng-model="vm.form.message" rows="1" placeholder="Message" required></textarea>
                 <div ng-messages="getInTouchForm.message.$error" role="alert" multiple>
                     <div ng-message="required">
                         <span translate="CONTACT.FORM.ERRORS.MESSAGE_REQUIRED">Message is required</span>

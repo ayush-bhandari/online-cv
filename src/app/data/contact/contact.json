@@ -6,19 +6,44 @@
 			"url":"mailto:admin@ayushbhandari.com",
 			"target":"_self"
 		},{
+			"name":"Gmail",
+			"icon_name":"google",
+			"url":"mailto:aayushbhandari1993@gmail.com",
+			"target":"_self"
+		},{
+			"name":"Ymail",
+			"icon_name":"yahoo",
+			"url":"mailto:aayushbhandari@yahoo.com",
+			"target":"_self"
+		},{
 			"name":"Twitter",
-			"icon_name":"twitter",
+			"icon_name":"twitter-box",
 			"url":"https://twitter.com/ayush_da",
 			"target":"_blank"
 		},{
 			"name":"Linkedin",
-			"icon_name":"linkedin",
-			"url":"",
+			"icon_name":"linkedin-box",
+			"url":"https://linkedin.com/in/ayush-bhandari",
 			"target":"_blank"
 		},{
 			"name":"Github",
-			"icon_name":"github",
-			"url":"",
+			"icon_name":"github-box",
+			"url":"https://github.com/ayush-bhandari",
+			"target":"_blank"
+		},{
+			"name":"Facebook",
+			"icon_name":"facebook-box",
+			"url":"https://www.facebook.com/ayushbhandari23",
+			"target":"_blank"
+		},{
+			"name":"Instagram",
+			"icon_name":"instagram",
+			"url":"https://www.instagram.com/ayushbhandari23/",
+			"target":"_blank"
+		},{
+			"name":"Stack Overflow",
+			"icon_name":"stackoverflow",
+			"url":"https://stackoverflow.com/users/8539506/ayush-bhandari",
 			"target":"_blank"
 		}
 	]
