@@ -28,5 +28,9 @@ npm-debug.log.*
 # Output folder.
 dist/
 
-#workspace file
+# Workspace file
 online-cv.sublime-workspace
+
+# SEO Files
+src/robots.txt
+src/sitemap.xml

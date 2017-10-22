@@ -3,6 +3,10 @@ export default function ContactController(api,$mdToast,$scope)
         var vm = this;
 
         // Data
+        $scope.$parent.seo = { 
+            pageTitle : 'Contact', 
+            pageDescripton: 'Welcome to contact page of Ayush Bhandari portfolio website based on angularjs.' 
+        };
         vm.data = {};
         vm.form ={};
 

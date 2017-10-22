@@ -1,8 +1,12 @@
-export default function AbilityController(api)
+export default function AbilityController(api,$scope)
     {
         var vm = this;
 
         // Data
+        $scope.$parent.seo = { 
+            pageTitle : 'Ability', 
+            pageDescripton: 'Welcome to ability page of Ayush Bhandari portfolio website based on angularjs.' 
+        };
         vm.data = {};
 
         // Methods

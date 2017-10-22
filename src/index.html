@@ -1,14 +1,34 @@
 <!doctype html>
-<html ng-app="app">
+<html ng-app="app" ng-controller="IndexController as vm" ng-cloak>
     <head>
         <base href="/">
         <meta charset="utf-8">
-        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>Ayush Bhandari</title>
+        <meta name="fragment" content="!">
+        <meta name="robots" content="index,follow"/>
+        <title>Ayush Bhandari | {{ seo.pageTitle }}</title>
+        <meta name="description" content="{{ seo.metaDescription }}">
+
+    <meta property="og:title" content="Ayush Bhandari | {{ seo.pageTitle }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://ayushbhandari.com/" />
+    <meta property="og:description" content="{{ seo.metaDescription }}" />
+    <meta property="og:site_name" content="ayushbhandari" />
+
         <link rel="shortcut icon" href="favicon.ico"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108137525-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-108137525-1');
+        </script>
+
     </head>
-    <body ng-controller="IndexController as vm" ng-cloak><tool-bar></tool-bar></body>
+    <body ng-cloak><tool-bar></tool-bar></body>
 </html>

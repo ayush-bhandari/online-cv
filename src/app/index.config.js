@@ -1,5 +1,6 @@
-export default function config($translateProvider,$mdThemingProvider,$httpProgressOpsProvider)
+export default function config($httpProvider,$translateProvider,$mdThemingProvider,$httpProgressOpsProvider)
 {
+    $httpProvider.interceptors.push('httpRequestInterceptor');
     $mdThemingProvider.theme('default')
         .primaryPalette('blue')
         .accentPalette('pink');

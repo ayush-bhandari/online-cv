@@ -1,8 +1,12 @@
-export default function HomeController(api)
+export default function HomeController(api,$scope)
     {
         var vm = this;
 
         // Data
+        $scope.$parent.seo = { 
+		    pageTitle : 'Home', 
+		    pageDescripton: 'Welcome to home page of Ayush Bhandari portfolio website based on angularjs.' 
+		};
         vm.title;
         vm.smiley;
         vm.image_url;

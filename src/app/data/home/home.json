@@ -1,6 +1,6 @@
 {
 	"title":["awesome","amazing","faboulous","remarkable","marvelous","superb","terrific"],
-	"smiley":[":smile:",":smiley:",":blush:",":laughing:",":joy:"],
+	"smiley":[":smile:",":smiley:",":blush:",":laughing:"],
 	"image_url":"../../../assets/img/user/home.png",
 	"details":{
 		"para_one":[{"title":"From Himalayas"},{"title":"Web Developer"}, {"title":"Tech Enthusiast"}],
